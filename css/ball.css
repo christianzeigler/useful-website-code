@@ -1,0 +1,41 @@
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px; 
+    background-color: #bada55;
+    border-color: black; 
+    
+    animation-name: jump; /*has to match below*/
+    animation-duration: 500ms;  /*default = 0s, is so fast can’t see */
+    animation-timing-function: ease-in; /* how it travels */
+    animation-fill-mode: forwards; /* not sure */
+    animation-iteration-count: infinite; /*how many time to do it*/
+    animation-direction: alternate; /*which directions to go*/
+
+    
+}
+
+p {
+    
+    /*align words in middle of box*/
+    
+    position: relative;
+    text-align: center;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+@keyframes jump {
+    from {
+    position: absolute; 
+    top: 0px;
+    }
+    
+    to {
+    position: absolute; 
+    top: 100px;    
+        
+    }
+    
+    
+}
