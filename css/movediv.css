@@ -1,0 +1,22 @@
+.element {
+    /* give some size */
+    
+    width: 100px;
+    height: 100px; 
+    background-color: magenta;
+    
+    /*which do I need? */
+    /*answer is none! */ 
+    /*transform: all; */
+    /*transition: all;*/
+    /* transition-property: transform;*/  /*this is it */
+    
+    transition-duration: 1s; 
+    transition-timing-function: ease-in;
+    
+}
+
+.element:hover {
+    
+    transform: translate(100%);
+}
