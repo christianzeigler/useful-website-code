@@ -1,17 +1,17 @@
 .pic {
-    float: left; 
+    float: left; /* needed to rotate around center of picture */ 
     margin: 10px; 
     animation-name: spinning; /*has to match below*/
     animation-duration: 5s;  /*default = 0s, is so fast can’t see */
-    transform-origin: 50% 50%;
-    animation-timing-function: linear;
+    transform-origin: 50% 50%; /*rotates around center of picture */
+    animation-timing-function: linear; /*no change in speed*/
     animation-iteration-count: infinite; /*how many time to do it*/
-    animation-direction: normal; /*which directions to go*/
+    animation-direction: normal; /*just goes in circles*/
 }
 
 @keyframes spinning {
     from { /* could also use 0% and 100% for from to */
-        transform: rotate(0deg);
+        transform: rotate(0deg); /*start at 0 degrees of rotation*/
     }
     
     to{
