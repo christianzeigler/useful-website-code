@@ -1,0 +1,13 @@
+a {
+    font-size: 3em;
+    color: blue;
+    transition-property: color; 
+    transition-duration: 1s; 
+    transition-timing-function: ease-in-out;
+}
+
+a:hover {
+    color: #000;
+    
+    
+}
