@@ -1,0 +1,17 @@
+.box {
+    /*give it some size to be visible */
+    width: 200px;
+    height: 200px; 
+    background-color: saddlebrown; 
+    
+     
+    transition-property: background-color, width; 
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.box:hover {
+    background-color: #e84610;
+    width: 300px;
+    
+}
