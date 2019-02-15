@@ -1,0 +1,20 @@
+.pic {
+    float: left; 
+    margin: 10px; 
+    animation-name: spinning; /*has to match below*/
+    animation-duration: 5s;  /*default = 0s, is so fast can’t see */
+    transform-origin: 50% 50%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; /*how many time to do it*/
+    animation-direction: normal; /*which directions to go*/
+}
+
+@keyframes spinning {
+    from { /* could also use 0% and 100% for from to */
+        transform: rotate(0deg);
+    }
+    
+    to{
+        transform: rotate(360deg); 
+    }
+}
