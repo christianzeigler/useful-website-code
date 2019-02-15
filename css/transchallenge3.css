@@ -1,0 +1,27 @@
+.pic {
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    position: absolute; 
+    top: 10px;
+    left 10px;
+    margin: 10px;
+    float: left;
+    display: inline-block;
+}
+
+.pic:hover {
+    transform: scale(2);
+    position: fixed; 
+    margin: 100px;
+
+
+/* @keyframes scaling {
+    from {
+        transform: scale(1);
+    }
+    
+    to {
+        transform: scale(2);
+    }
+} */
