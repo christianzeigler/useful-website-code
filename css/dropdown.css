@@ -37,7 +37,7 @@ button {
     transform: translateY(-100%);
     
     transition: transform 0.5s ease-in-out;
-    z-index: -1;
+    z-index: -1; /* so hidden behind button */
 }
 
 .dropdownLink {
